@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="item"></p>
+
+        <p id="tamanho"></p>
+
+        <script>
+            var frutas = ["cereja", "bananas", "laranjas", "uvas"];
+
+            //Vamos exibir todos os elementos de um aray usando um ciclo for
+
+            for (var i = 0; i < frutas.length; i++) {
+                document.write("Eu gostaria de comer " + frutas[i]);
+                document.write("<br>");
+            }
+            document.getElementById("item").innerHTML = frutas[2];
+            document.getElementById("tamanho").innerHTML = frutas.length;
+
+        </script>
+    </body>
+</html>

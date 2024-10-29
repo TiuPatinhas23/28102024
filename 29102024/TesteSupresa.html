@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificações Simples</title>
+</head>
+<body>
+
+    <h1>Verificações</h1>
+
+    <h2>Par ou Ímpar</h2>
+    <input type="number" id="numero" placeholder="Número">
+    <button onclick="alert(numero % 2 === 0 ? 'Par' : 'Ímpar')">Verificar</button>
+
+    <h2>Idade</h2>
+    <input type="number" id="idade" placeholder="Idade">
+    <button onclick="alert(idade < 18 ? 'Muito novo para votar' : 'Suficiente para votar')">Verificar</button>
+
+    <h2>Dia da Semana</h2>
+    <input type="text" id="dia" placeholder="Dia (ex: sábado)">
+    <button onclick="alert((dia === 'sábado' || dia === 'domingo') ? 'É fim de semana' : 'Bom Trabalho!')">Verificar</button>
+
+    <script>
+        function verificar() {
+            const numero = document.getElementById("numero").value;
+            const idade = document.getElementById("idade").value;
+            const dia = document.getElementById("dia").value.toLowerCase();
+            return { numero, idade, dia };
+        }
+    </script>
+
+</body>
+</html>
