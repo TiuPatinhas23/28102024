@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exenplo 1 - Formulari basico</title>
+        <script>
+            function obrigado() {
+                window.alert("Obrigado pela visita!");
+                window.open("http://www.wesleymissioncenter.org/images/thankyou.png", "janela");
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Informação pessual:</legend>
+                nome:<br>
+                <input type="texr" name="nome" value="Mikey">
+                <br>
+                apelido:<br>
+                <input type="text" name="apelido" value="mouse">
+                <br><br>
+                <input type="submit" value="enviar">
+            </fieldset>
+            <label for="nome_id">Nome: </label>
+            <input type="text" name="nome" placeholder="Digite o seu nome">
+            <br><br>
+            <label for="cidade_id">Cidade: </label>
+            <input id="cidade_id" type="text" name="cidade" placeholder="Qual é a sua cidade?">
+        </form>
+        <form name="dados" onsubmit="obrigado()">
+        Digite seu nome:
+        </form>
+    </body>
+</html>

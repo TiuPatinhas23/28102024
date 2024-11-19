@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <center><h1>Jogo de imagens</h1></center>
+        <script>
+            function correcao(){
+                filme1=document.getElementById("resposta").value;
+                if (filme1=="Batman VS Robin") {
+                    alert('Aceito. Pontuaçao: 5 pontos');
+                }
+                else{
+                    alert('Tente outra vex');
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <img src="filme2.jpeg" width="500" height="320"><br><br>
+        <form name filme1>
+            Intrudusa o nome do filme:
+            <input type="text" id="resposta" style="text-transform: uppercase" size="30"></form><br>
+            <button type="button" onclick="correcao()">Clique aqui para ver o resultado
+            </button>
+    </body>
+</html>
